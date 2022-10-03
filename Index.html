@@ -22,6 +22,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
@@ -44,9 +45,9 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <!-- <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1> -->
+        <!-- <h1 class="text-light"><a href="Home.html"><span>Tri-cloud Technology</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/TriCloud  main logo.png" alt="" class="img-fluid"></a>
+        <a href="Home.html"><img src="assets/img/TriCloud  main logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -56,7 +57,9 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <!-- dropdown 
+          uncomment if needed -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -82,20 +85,44 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero No Slider Section ======= -->
-  <section id="hero-no-slider" class="d-flex justify-cntent-center align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h2>Welcome to Moderna</h2>
-          <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
-            Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-            vel. Minus et tempore modi architecto.</p>
-          <a href="" class="btn-get-started ">Read More</a>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <p class="animate__animated animate__fadeInDown display-1 weight-bolder">Welcome</p>
+          <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+            et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+            doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+          <!-- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a> -->
         </div>
       </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown"><img src="assets/img/TriCloud  main logo.png" class="tricloud-img" alt=""></h2>
+          <!-- <h2 class="animate__animated animate__fadeInDown">Tricloud <br>Technologies</h2> -->
+          <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+            et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+            doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
+          <!-- <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a> -->
+        </div>
+      </div>
+
+     <!-- next-prev buttons -->
+      <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a> -->
     </div>
-  </section><!-- End Hero No Slider Sectio -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -107,7 +134,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <h4 class="title"><a href="">Best Websites</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
                 occaecati cupiditate non provident</p>
             </div>
@@ -116,7 +143,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <h4 class="title"><a href="">Advanced Coding</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur</p>
             </div>
@@ -125,7 +152,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <h4 class="title"><a href="">Faster Load Times</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum</p>
             </div>
@@ -134,7 +161,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <h4 class="title"><a href="">World Wde Clients</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium voluptatum deleniti atque</p>
             </div>
@@ -143,7 +170,9 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+
+    <!-- End Services Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
@@ -151,23 +180,22 @@
 
         <div class="row">
           <div class="col-lg-6 video-box">
-            <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-              data-autoplay="true"></a>
+            <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <h4 class="title"><a href="">CoOporative Team</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
                 occaecati cupiditate non provident</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <div class="icon"><i class="fa-solid fa-globe"></i></div>
+              <h4 class="title"><a href="">Trusted around the Globe</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium voluptatum deleniti atque</p>
             </div>
@@ -176,25 +204,27 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section>
+
+    <!-- End Why Us Section -->
 
     <!-- ======= Features Section ======= -->
     <section class="features">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title mb-4">
           <h2>Features</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
             consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+            in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+            <img src="assets/img/Webste_developement-r.png" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>Websites Development</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
@@ -206,13 +236,18 @@
             </ul>
           </div>
         </div>
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 order-1 order-md-2 text-center">
+            <img src="assets/img/webdevelopment added (1).png" class="img-fluid" id="animate" alt="">
+          </div>
+        </div>
 
         <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
-          </div>
+          <!-- <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/MobileAppDevelopmentno2.png" class="img-fluid" alt="">
+          </div> -->
           <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Corporis temporibus maiores provident</h3>
+            <h3>App Development</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
@@ -223,11 +258,26 @@
               voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima eligendi ipsa vel odit blanditiis distinctio reprehenderit vero voluptates, dignissimos quo et libero aperiam amet ratione ad incidunt delectus dicta!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, impedit! Ratione nemo labore, dignissimos voluptate est harum sunt earum provident velit laborum enim ipsa deleniti eveniet! Culpa, expedita repudiandae. Facere.
             </p>
+          </div>
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/MobileAppDevelopmentno2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="row" id="nomargin" data-aos="fade-up">
+          <div class="col-md-6 order-1 order-md-2">
+            <span> <strong>Mobile Games :</strong></span>
+            <img src="assets/img/Mobile_App_developement.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6 order-1 order-md-2 mt-2">
+            <span class="display-7"> <strong>Mobile Apps : </strong></span>
+            <img src="assets/img/mobileAppdevelopment3.png" class="img-fluid mt-5" alt="">
           </div>
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <!-- <div class="row" data-aos="fade-up">
           <div class="col-md-5">
             <img src="assets/img/features-3.svg" class="img-fluid" alt="">
           </div>
@@ -261,7 +311,7 @@
               culpa qui officia deserunt mollit anim id est laborum
             </p>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Features Section -->
@@ -294,33 +344,31 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Home.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+           <a href="services.html"><u><h4>Our Services</h4></u></a>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li></i> Mobile App Development</li>
+              <li></i> Web Development</li>
+              <li></i>Web Based Games</li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
+            <a href="contact.html"><u><h4>Contact Us </h4></u></a>
             <p>
               Al-Qadir Heights <br>
               Babar Block Garden Town<br>
               Lahore, Punjab <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong><a href="">contact@tricloudtechnologies.com</a><br>
+              <strong>Phone: <br></strong> +1 5589 55488 55<br>
+              <strong>Email:</strong><br><a href="">contact@tricloudtechnologies.com</a><br>
             </p>
 
           </div>
@@ -329,12 +377,12 @@
             <h3>About Tri-Cloud</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
               darta donna mare fermentum iaculis eu non diam phasellus.</p>
-              <div class="social-links mt-3">
-                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-                <a href="https://www.facebook.com/TriCloudTechnologies" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-                <a href="https://www.linkedin.com/company/tricloud-technologies/?viewAsMember=true" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
+            <div class="social-links mt-3">
+              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+              <a href="https://www.facebook.com/TriCloudTechnologies" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+              <a href="https://www.linkedin.com/company/tricloud-technologies/?viewAsMember=true" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
           </div>
 
         </div>
@@ -343,16 +391,16 @@
 
     <!-- <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Tri-Cloud Technology</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Tri-cloud Technology</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         All the links in the footer should remain intact.
         You can delete the links only if you purchased the pro version.
         Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form:
-        https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      </div> 
+
     </div> -->
   </footer><!-- End Footer -->
 
