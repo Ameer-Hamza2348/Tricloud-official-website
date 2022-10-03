@@ -32,6 +32,7 @@ h6,
 .font-primary {
   font-family: "Roboto", sans-serif;
 }
+
 /* #animate{
   transition: transform .4s;
 }
@@ -451,7 +452,7 @@ h6,
   text-decoration: none;
 }
 
-.tricloud-img{
+.tricloud-img {
   max-height: 420px;
   max-width: 420px;
 }
@@ -963,7 +964,7 @@ section {
   margin-bottom: 0;
 }
 
-#nomargin{
+#nomargin {
   margin-top: 0;
 }
 
@@ -1051,7 +1052,8 @@ section {
   text-align: left;
   transition: 0.9s;
 }
-.skills-content .row .col-sm-4 i{
+
+.skills-content .row .col-sm-4 i {
   font-size: 70px;
   color: #1c3745;
 }
@@ -1214,10 +1216,11 @@ section {
   color: #68A4C4;
 }
 
-#atplace{
+#atplace {
   padding: 0%;
   text-align: center;
 }
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -1392,18 +1395,18 @@ section {
 
 .portfolio .portfolio-item .portfolio-info h3 {
   font-size: 22px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
 .portfolio .portfolio-item .portfolio-info a i {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 28px;
   transition: 0.3s;
 }
 
 .portfolio .portfolio-item .portfolio-info a i:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .portfolio .portfolio-item:hover img {
