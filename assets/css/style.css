@@ -1686,6 +1686,10 @@ section {
   background: #8dbad2;
 }
 
+.button-area span {
+  display: none;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
