@@ -453,8 +453,8 @@ h6,
 }
 
 .tricloud-img {
-  max-height: 420px;
-  max-width: 420px;
+  max-height: 70%;
+  max-width: 70%;
 }
 
 @media (min-width: 1024px) {
