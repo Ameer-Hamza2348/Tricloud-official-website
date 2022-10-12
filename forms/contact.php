@@ -1,41 +1,27 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
-
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
-
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+  $userName = $_GET['myname'];
+  $userEmail = $_GET['myemail'];
+  $messageSubject = $_GET['mysubject'];
+  $message = $_GET['message'];
+  
+  if(){
   }
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+  $mysqli = new mysqli("localhost","root","","tcl_data");
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+  if ($mysqli -> connect_errno) {
+    echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+    exit();
+  }
+  // echo $_GET['abc'];
+  // $sql = "SELECT * FROM contacts where 1";
+  $newlink = "INSERT INTO contacts (`name`, `email`, `subject`, `message`) VALUES ('$userName', '$userEmail', '$messageSubject' , '$message')";
+  if(mysqli_query($mysqli, $newlink)){
+    echo "\n data saved successfully.";
+} else{
+    echo "ERROR: Could not able to execute. " . mysqli_error($newlink);
+}
+  $mysqli -> close();
 ?>
+
+<!-- INSERT INTO `contacts` (`id`, `name`, `contact`, `message`) VALUES ('1', 'Ameer Hamza', '03335348483', 'Hi, this is Ameer Hamza'); -->
