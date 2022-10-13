@@ -1,5 +1,4 @@
-<?php
-if(isset($_POST['email']) && $_POST['email'] != ''){
+<!-- if(isset($_POST['email']) && $_POST['email'] != ''){
     if(filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
         $userName = $_POST['name'];
         $userEmail = $_POST['email'];
@@ -15,5 +14,4 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
         
         mail($to,$messageSubject,$body)
     }
-}
-?>
+} -->
