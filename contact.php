@@ -36,7 +36,7 @@ $alert = '';
 if(isset($_POST['submit'])){
   $name = $_POST['name'];
   $email = $_POST['email'];
-  $subject = $_POST['subject']
+  $subject = $_POST['subject'];
   $message = $_POST['message'];
 
   try{
