@@ -1,71 +1,66 @@
 <?php
-  // if( isset($_POST['myname']) && isset($_POST['myemail']) && isset($_POST['mysubject']) && isset($_POST['message'])) {
-  //   $userName = $_POST['myname'];
-  //   $userEmail = $_POST['myemail'];
-  //   $messageSubject = $_POST['mysubject'];
-  //   $message = $_POST['message'];
-  //   $mysqli = new mysqli("localhost","root","","tcl_data");
-  
-  //   if ($mysqli -> connect_errno) {
-  //     echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-  //     exit();
-  //   }
-    // echo $_POST['abc'];
-    // $sql = "SELECT * FROM contacts where 1";
-  //   $newlink = "INSERT INTO contacts (`name`, `email`, `subject`, `message`) VALUES ('$userName', '$userEmail', '$messageSubject' , '$message')";
-  //   if( mysqli_query($mysqli, $newlink) ) {
-  //     echo "\n data saved successfully.";
-  //   } else{
-  //     echo "ERROR: Could not able to execute. " . mysqli_error($newlink);
-  //   }
-  //   $mysqli -> close();
-  // } else {
-  //   echo "No enough query paramteres";
-  //   exit();
-  // }
   use PHPMailer\PHPMailer\PHPMailer;
 
-require_once 'phpmailer/Exception.php';
-require_once 'phpmailer/PHPMailer.php';
-require_once 'phpmailer/SMTP.php';
+  require_once 'phpmailer/Exception.php';
+  require_once 'phpmailer/PHPMailer.php';
+  require_once 'phpmailer/SMTP.php';
 
-$mail = new PHPMailer(true);
+  $mail = new PHPMailer();
 
-$alert = '';
+  $alert = '';
 
-if(isset($_POST['submit'])){
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $subject = $_POST['subject'];
-  $message = $_POST['message'];
+  if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
 
-  try{
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'ameer.hamza.0912309123@gmail.com'; // Gmail address which you want to use as SMTP server
-    $mail->Password = "tricloud09123"; // Gmail address Password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = '587';
+    try{
+      //Save to DB
+      $mysqli = new mysqli("localhost","root","","tcl_data");
+  
+      if ($mysqli -> connect_errno) {
+        echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+        exit();
+      }
 
-    $mail->setFrom('ameer.hamza.0912309123@gmail.com'); // Gmail address which you used as SMTP server
-    $mail->addAddress('ameer.hamza.0912309123@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
+      $sql = "INSERT INTO contacts (`name`, `email`, `subject`, `message`) VALUES ('$name', '$email', '$subject' , '$message')";
 
-    $mail->isHTML(true);
-    $mail->Subject = 'Message Received (Contact Page)';
-    $mail->Body = "<h3>Name : $name <br>Email: $email <br>Subject: $subject <br>Message : $message</h3>";
+      if( mysqli_query($mysqli, $sql) ) {
+        // echo "\n data saved successfully.";
+      } else{
+        echo "ERROR: Could not able to execute. " . mysqli_error($sql);
+      }
+      $mysqli -> close();
 
-    $mail->send();
-    $alert = '<div class="alert-success">
-                 <span>Message Sent! Thank you for contacting us.</span>
+      //Send Email
+      $mail->isSMTP();
+      $mail->Host = 'smtp.mailtrap.io';
+      $mail->SMTPAuth = true;
+      $mail->Port = 2525;
+      $mail->Username = '2e70b1f28be818';
+      $mail->Password = '8e0f46261930da';
+
+      $mail->setFrom('abc@example.com'); // address which you used as SMTP server
+      $mail->addAddress('abc@example.com'); // Email address where you want to receive emails
+
+      $mail->isHTML(true);
+      $mail->Subject = 'Message Received (Contact Page)';
+      $mail->Body = "<h3>Name : $name <br>Email: $email <br>Subject: $subject <br>Message : $message</h3>";
+
+      $mail->send();
+
+
+      $alert = '<div class="alert-success">
+                  <span>Message Sent! Thank you for contacting us.</span>
+                  </div>';
+    } catch (Exception $e){
+      $alert = '<div class="alert-error">
+                  <span>'.$e->getMessage().'</span>
                 </div>';
-  } catch (Exception $e){
-    $alert = '<div class="alert-error">
-                <span>'.$e->getMessage().'</span>
-              </div>';
+    }
+  } else {
+    // echo "Not enough query parameters.";
+    // exit();
   }
-}
-
 ?>
-
-<!-- INSERT INTO `contacts` (`id`, `name`, `contact`, `message`) VALUES ('1', 'Ameer Hamza', '03335348483', 'Hi, this is Ameer Hamza'); -->

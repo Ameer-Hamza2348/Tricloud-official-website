@@ -99,9 +99,7 @@
 
       </div>
     </section><!-- End Contact Section -->
-  <!--alert messages start-->
-  <?php echo $alert; ?>
-  <!--alert messages end-->
+
     <!-- ======= Contact Section ======= -->
     <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
       <div class="container">
@@ -141,7 +139,7 @@
           </div>
           <!-- contact us form -->
           <div class="col-lg-6">
-            <form class="contact" action="" method="post">
+            <form class="php-email-form" action="" method="post">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
@@ -160,6 +158,9 @@
               <div class="button-area">
                 <button class="w-100 mx-auto text-center" type="submit">Send Message</button>
                 <span>Sending your message...</span>
+                <!--alert messages start-->
+                <?php echo $alert; ?>
+                <!--alert messages end-->
               </div>
             </form>
           </div>
@@ -289,7 +290,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascriptz">
     if(window.history.replaceState){
       window.history.replaceState(null, null, window.location.href);
     }
