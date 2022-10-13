@@ -48,7 +48,7 @@
       <div class="logo">
         <!-- <h1 class="text-light"><a href="Home.html"><span>Moderna</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="Home.html"><img src="assets/img/TriCloud  main logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="assets/img/TriCloud  main logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -57,7 +57,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <!-- <li><a href="team.html">Team</a></li> -->
           <!-- <li><a href="blog.html">Blog</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -211,8 +211,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="Home.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
             </ul>
           </div>
 
@@ -223,7 +223,6 @@
             <ul>
               <li></i> Mobile App Development</li>
               <li></i> Web Development</li>
-              <li></i>Web Based Games</li>
             </ul>
           </div>
 
@@ -235,14 +234,14 @@
               Al-Qadir Heights <br>
               Babar Block Garden Town<br>
               Lahore, Punjab <br><br>
-              <strong>Phone: <br></strong> +1 5589 55488 55<br>
+              <strong>Phone: <br></strong> +92 332-4147789<br>
               <strong>Email:</strong><br><a href="">contact@tricloudtechnologies.com</a><br>
             </p>
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Tri-Cloud</h3>
+            <h3>About TriCloud Technologies</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
               darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links mt-3">
