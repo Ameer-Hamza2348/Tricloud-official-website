@@ -289,12 +289,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script type="text/javascriptz">
-    if(window.history.replaceState){
-      window.history.replaceState(null, null, window.location.href);
-    }
-  </script>
-
+  <script type="text/javascript">
+      if(window.history.replaceState)
+      {
+        window.history.replaceState(null, null, window.location.href);
+      }
+    </script>
 </body>
 
 </html>

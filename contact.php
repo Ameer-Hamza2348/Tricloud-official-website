@@ -41,8 +41,8 @@
       $mail->Username = '2e70b1f28be818';
       $mail->Password = '8e0f46261930da';
 
-      $mail->setFrom('abc@example.com'); // address which you used as SMTP server
-      $mail->addAddress('abc@example.com'); // Email address where you want to receive emails
+      $mail->setFrom($email); // address which you used as SMTP server
+      $mail->addAddress('US@mail.com'); // Email address where you want to receive emails
 
       $mail->isHTML(true);
       $mail->Subject = 'Message Received (Contact Page)';
@@ -63,4 +63,5 @@
     // echo "Not enough query parameters.";
     // exit();
   }
+  
 ?>
