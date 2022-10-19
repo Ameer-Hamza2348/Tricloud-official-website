@@ -7,7 +7,7 @@
 
   $mail = new PHPMailer();
 
-  $alert = '';
+  $responseObj = new stdClass();
 
   if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
     $name = $_POST['name'];
@@ -48,20 +48,30 @@
       $mail->Subject = 'Message Received (Contact Page)';
       $mail->Body = "<h3>Name : $name <br>Email: $email <br>Subject: $subject <br>Message : $message</h3>";
 
-      $mail->send();
+      $response = $mail->send();
 
+      $responseObj->success = "Email has been sent";
+      // $responseObj->age = 30;
+      // $responseObj->city = "New York";
 
-      $alert = '<div class="alert-success">
-                  <span>Message Sent! Thank you for contacting us.</span>
-                  </div>';
-    } catch (Exception $e){
-      $alert = '<div class="alert-error">
-                  <span>'.$e->getMessage().'</span>
-                </div>';
+      // $myJSON = json_encode($responseObj);
+      // echo $myJSON;
+      
+      if ($response) {
+        $responseObj->$response = $response; 
+        echo json_encode($responseObj);
+      } else {
+        echo json_encode($mail->getSMTPInstance()->getError());
+      }
+    } catch (Exception $e) {
+      echo $e->getMessage();
     }
-  } else {
-    // echo "Not enough query parameters.";
+  } 
+  else {
+    $responseObj = new stdClass();
+    // $responseObj->error = "Not enough query parameters.";
+    echo '<script>console.log("Error"); </script>';
+    echo json_encode($responseObj);
     // exit();
   }
-  
 ?>

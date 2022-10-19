@@ -2406,3 +2406,22 @@ section {
 #footer .credits a {
   color: #a2cce3;
 }
+/* bootstrap alerts */
+.alert-gradient{
+  background: linear-gradient(to top right, #2287b9,  #164f6b);
+  border-radius:0px;
+  border:none;
+  color:#fff;
+}
+.alert-heading-gradient{
+  color:#fff;
+  font-weight:900;
+}
+
+#alert-box{
+  display: none;
+}
+
+#alert-error{
+  display: none;
+}

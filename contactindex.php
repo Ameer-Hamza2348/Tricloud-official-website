@@ -139,11 +139,12 @@
           </div>
           <!-- contact us form -->
           <div class="col-lg-6">
-            <form class="php-email-form" action="" method="post">
+            <form class="php-email-form" id="myForm" action="" method="post">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
                 </div>
+                
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
                 </div>
@@ -151,16 +152,20 @@
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
               </div>
+                
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="6" placeholder="Message"></textarea>
               </div>
+              
               <br>
               <div class="button-area">
                 <button class="w-100 mx-auto text-center" type="submit">Send Message</button>
-                <span>Sending your message...</span>
-                <!--alert messages start-->
-                <?php echo $alert; ?>
-                <!--alert messages end-->
+              </div>
+              <div id="alert-box" class="alert-gradient mt-1">
+                <div class="alert-heading-gradient py-2 text-center">Email sent successfully!!</div>
+              </div>
+              <div id="alert-error" class="alert-warning">
+                <div>An Error Occured, please Try again!</div>
               </div>
             </form>
           </div>
@@ -170,7 +175,6 @@
       </div>
     </section>
     <!-- End Contact Section -->
-
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
       <div class="container-fluid p-0">
@@ -184,22 +188,6 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <div class="footer-top">
       <div class="container">
@@ -257,20 +245,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Tri-Cloud Technology</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <a>All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form:
-        https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div> -->
   </footer>
   <!-- End Footer -->
 
@@ -289,12 +263,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">
-      if(window.history.replaceState)
-      {
-        window.history.replaceState(null, null, window.location.href);
-      }
-    </script>
 </body>
 
 </html>
