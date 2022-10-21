@@ -29,7 +29,7 @@
       if( mysqli_query($mysqli, $sql) ) {
         // echo "\n data saved successfully.";
       } else{
-        echo "ERROR: Could not able to execute. " . mysqli_error($sql);
+        echo "ERROR: Could not able to execute. " . mysqli_error($sqli);
       }
       $mysqli -> close();
 
