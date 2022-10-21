@@ -133,11 +133,10 @@
               <div class="button-area">
                 <button class="w-100 mx-auto text-center" type="submit">Send Message</button>
               </div>
+              <div class="loading">Loading</div>
+              <!-- <div class="error-message">email not sent</div> -->
               <div id="alert-box" class="alert-gradient mt-1">
                 <div class="alert-heading-gradient py-2 text-center">Email sent successfully!!</div>
-              </div>
-              <div id="alert-error" class="alert-warning">
-                <div>An Error Occured, please Try again!</div>
               </div>
             </form>
           </div>

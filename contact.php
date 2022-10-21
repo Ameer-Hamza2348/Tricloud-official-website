@@ -45,7 +45,7 @@
       $mail->addAddress('US@mail.com'); // Email address where you want to receive emails
 
       $mail->isHTML(true);
-      $mail->Subject = 'Message Received (Contact Page)';
+      $mail->Subject = $subject;
       $mail->Body = "<h3>Name : $name <br>Email: $email <br>Subject: $subject <br>Message : $message</h3>";
 
       $response = $mail->send();
@@ -61,7 +61,7 @@
         $responseObj->$response = $response; 
         echo json_encode($responseObj);
       } else {
-        echo json_encode($mail->getSMTPInstance()->getError());
+        echo json_encode($mail->getSMTPInstance()->getError($alert));
       }
     } catch (Exception $e) {
       echo $e->getMessage();
