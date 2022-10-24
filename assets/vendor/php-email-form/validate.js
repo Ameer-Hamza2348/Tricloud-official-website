@@ -1,12 +1,12 @@
 // contact form validation //
 
-const form = document.querySelector("form"),
-  statusTXT = form.querySelector(".button-area span");
-
+const form = document.querySelector("form")
+  // statusTXT = form.querySelector(".button-area span")
+;
 form.onsubmit = (e)=>{
   e.preventDefault();
-//   statusTXT.style.color = "#0D6EFD";
-//   statusTXT.style.display = "block";
+  // statusTXT.style.color = "#0D6EFD";
+  // statusTXT.style.display = "block";
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "contact.php", true);
   xhr.onload = ()=>{
@@ -101,7 +101,7 @@ form.onsubmit = (e)=>{
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
     // thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    // thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
 })();
