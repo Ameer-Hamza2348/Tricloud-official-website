@@ -135,7 +135,7 @@
               </div>
               <div class="loading">Sending...</div>
               <!-- <div class="error-message">email not sent</div> -->
-              <div id="alert-box" class="alert-gradient mt-1">
+              <div id="success-alert-box" class="alert-gradient mt-1">
                 <div class="alert-heading-gradient py-2 text-center">Email sent successfully!!</div>
               </div>
               <!-- <div class="error-message"></div> -->
