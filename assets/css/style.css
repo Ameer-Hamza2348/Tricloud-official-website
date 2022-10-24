@@ -1,10 +1,3 @@
-/**
-* Template Name: Moderna - v4.10.0
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -2422,6 +2415,6 @@ section {
   display: none;
 }
 
-#alert-error{
+#error-alert-box{
   display: none;
 }
