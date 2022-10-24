@@ -46,7 +46,7 @@
 
       $mail->isHTML(true);
       $mail->Subject = $subject;
-      $mail->Body = "<h3>Name : $name <br>Email: $email <br>Subject: $subject <br>Message : $message</h3>";
+      $mail->Body = "<h3>Name : $name <br><br>Email: $email <br><br>Subject: $subject <br><br>Message : $message</h3>";
 
       $response = $mail->send();
 
@@ -70,7 +70,7 @@
   else {
     $responseObj = new stdClass();
     // $responseObj->error = "Not enough query parameters.";
-    echo '<script>console.log("Error"); </script>';
+    echo mysqli_connect_error();
     echo json_encode($responseObj);
     // exit();
   }
