@@ -10,7 +10,7 @@ form.onsubmit = (e)=>{
   form.querySelector('.loading').classList.add('d-block');
   setTimeout(function(){
     form.querySelector('.loading').classList.remove('d-block');
-  },6500)
+  },5000)
   let xhr = new XMLHttpRequest();
   xhr.onprogress = function () {
     console.log(xhr.status);
@@ -23,7 +23,7 @@ form.onsubmit = (e)=>{
         alert(msg.id);
   }
  }else {
-      form.querySelector('.error-message').classList.add('d-block');
+      form.querySelector('#error-alert-box').classList.add('d-block');
       alert('system error occured!!\n please check back later.');
     }
   }
