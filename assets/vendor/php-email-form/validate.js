@@ -8,6 +8,9 @@ form.onsubmit = (e)=>{
   // statusTXT.style.color = "#0D6EFD";
   // statusTXT.style.display = "block";
   form.querySelector('.loading').classList.add('d-block');
+  setTimeout(function(){
+    form.querySelector('.loading').classList.remove('d-block');
+  },6500)
   let xhr = new XMLHttpRequest();
   xhr.onprogress = function () {
     console.log(xhr.status);
