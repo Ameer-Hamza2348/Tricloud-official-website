@@ -1,4 +1,3 @@
-<?php include 'contact.php'; ?> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -138,7 +137,7 @@
               <div id="success-alert-box" class="alert-gradient mt-1">
                 <div class="alert-heading-gradient py-2 text-center">Email sent successfully!</div>
               </div>
-              <div id="error-alert-box" class="error-message">Error unable to send Email!</div>
+              <div id="error-alert-box" class="error-message mt-2 text-center">Error unable to send Email!</div>
             </form>
           </div>
 
@@ -147,6 +146,7 @@
       </div>
     </section>
     <!-- End Contact Section -->
+    <?php include 'contact.php'; ?> 
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
       <div class="container-fluid p-0">
