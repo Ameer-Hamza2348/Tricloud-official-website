@@ -253,6 +253,19 @@ h6,
   }
 }
 
+.navbar ul #prominent-color{
+  background-color: #118d7f;
+  color: #fff;
+  border-radius: 16%;
+  text-align: cente;
+}
+
+.navbar ul #prominent-color:hover{
+  outline: 2px solid #118d7f;
+  background-color: transparent;
+  color: #fff;
+}
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -353,12 +366,14 @@ h6,
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, rgba(0, 0, 6, 0.8), rgba(0, 7, 0, 0.6)), url("../img/hero-bg.jpg") center no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 6, 0.8), rgba(0, 7, 0, 0.8)), url("../img/christopher-gower-m_HRfLhgABo-unsplash.jpg") no-repeat;
+  background-position: bottom;
+  background-size: cover;
   /* z-index: 0; */
-  border-radius: 0 0 50% 50%;
+  /* border-radius: 0 0 50% 50%; */
   transform: translateX(-50%) rotate(0deg);
 }
-
+/* 
 #hero::before {
   content: "";
   position: absolute;
@@ -368,10 +383,10 @@ h6,
   height: 96%;
   background: #000000;
   opacity: 0.3;
-  /* z-index: 0; */
+  z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) translateY(18px) rotate(2deg);
-}
+} */
 
 #hero .carousel-container {
   display: flex;
@@ -388,7 +403,7 @@ h6,
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 700;
 }
 
@@ -520,7 +535,7 @@ h6,
   top: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+  background: linear-gradient(to right, rgba(30, 67, 86, 1), rgba(30, 67, 86, 1)), url("../img/hero-bg.jpg") center top no-repeat;
 }
 
 #hero-no-slider h2 {
@@ -571,7 +586,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f6fcfd;
+  background-color: #ffffff;
 }
 
 .section-title {
@@ -2417,4 +2432,35 @@ section {
 
 #error-alert-box{
   display: none;
+}
+
+#text-change{
+  font-family: cursive;
+}
+
+#capital-it{
+  text-transform: uppercase;
+  /* word-spacing: 5px; */
+  letter-spacing: 3px;
+}
+
+#contacting {
+  color: #fff;
+  font-weight: bold;
+  padding: 22px 20px 22px 20px;
+  background-color: #118d7f;
+  transition: .2s ease-in-out 0s;
+  border-radius: 15%;
+  border: none;
+}
+
+#contacting:hover{
+  color: #fff;
+  transform: scale(1.2);
+  outline: 2px solid #118d7f;
+}
+
+.one{
+  color: rgba(30, 67, 86, 0.5);
+  margin-right: 5px;
 }

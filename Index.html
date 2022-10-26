@@ -50,7 +50,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active " href="Index.html">Home</a></li>
+          <li><a class="active " href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -75,7 +75,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a href="contactindex.php">Contact Us</a></li>
+          <li><a id="prominent-color" class="text-center p-3 m-5 mr-0 m-0" href="contactindex.php">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -90,14 +90,11 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <p class="animate__animated animate__fadeInDown display-1 weight-bolder">Welcome</p>
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown"><img src="assets/img/TriCloud  main logo.png"
-              class="tricloud-img" alt=""></h2>
+          <h2 class="animate__animated animate__fadeInDown display-1" id="text-change">We breathe life into your ideas.
+          </h2>
+          <p class="animate__animated animate__fadeInDown" id="capital-it">We convert your businesses from papers to
+            paperless by providing mobile apps, Websites, Point of sales (pos) systems</p>
+            <button id="contacting" class="mt-5 text-light"><a href="contactindex.php" class="animate__animated animate__fadeInDown text-light">Contact Us</a></button>
         </div>
       </div>
     </div>
@@ -105,11 +102,48 @@
   <!-- End Hero -->
 
   <main id="main">
+    
+    <!-- ======= Facts Section ======= -->
+    <section class="facts section-bg" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row d-flex justify-content-between counters">
+
+          <div class="col-lg-2 col-6 mx-4 text-center bg-light rounded-4">
+            <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2"
+              class="purecounter plus-sign"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-2 col-6 mx-4 text-center bg-light rounded-4">
+            <span data-purecounter-start="0" data-purecounter-end="522" data-purecounter-duration="2"
+              class="purecounter plus-sign"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-2 col-6 mx-4 text-center bg-light rounded-4">
+            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="2"
+              class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-2 col-6 mx-4 text-center bg-light rounded-4">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2"
+              class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
 
     <!-- ======= Services Section ======= -->
     <section class="services">
       <div class="container">
-
+        <div class="section-title mb-4">
+          <h2>Our Features</h2>
+        </div>
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
@@ -155,7 +189,7 @@
     <!-- End Services Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <!-- <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
 
         <div class="row">
@@ -183,7 +217,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
     <!-- End Why Us Section -->
 
@@ -192,14 +226,14 @@
       <div class="container">
 
         <div class="section-title mb-4">
-          <h2>Features</h2>
+          <h2>Our Services</h2>
         </div>
 
         <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <img src="assets/img/Webste_developement-r.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-7 pt-4">
+          <div class="col-md-6 pt-4">
             <h3>Web Development</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -212,13 +246,13 @@
             </ul>
           </div>
         </div>
-        <div class="row" data-aos="fade-up">
-          <div class="col-12 order-1 order-md-2 text-center">
-            <img src="assets/img/webdevelopment added (1).png" class="img-fluid" id="animate" alt="">
-          </div>
-        </div>
+
 
         <div class="row" data-aos="fade-up">
+          
+          <div class="col-md-6" id="nomargin" data-aos="fade-up">
+            <img src="assets/img/Mobile_App_developement.png" class="img-fluid" alt="">
+          </div>
           <div class="col-md-6 pt-5">
             <h3>Mobile App Development</h3>
             <p class="fst-italic">
@@ -226,44 +260,9 @@
               dolore
               magna aliqua.
             </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima eligendi ipsa vel odit
-              blanditiis distinctio reprehenderit vero voluptates, dignissimos quo et libero aperiam amet ratione ad
-              incidunt delectus dicta!
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, impeditate iusto nulla, magnam ullam ipsa quam expedita, aperiam cum illum, reprehenderit illo
-              autem eum magni? Quae, nesciunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsum
-              temporibus consequatur voluptate iusto nulla, magnam ullam ipsa quam expedita, aperiam cum illum,
-              reprehenderit illo autem eum magni? Quae, nesciunt.Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Ab ipsum temporibus consequatur voluptate iusto nulla, magnam ullam ipsa quam expedita, aperiam cum
-              illum, reprehenderit illo autem eum magni? Quae, nesciunt.Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Ab ipsum temporibus consequatur voluptate iusto nulla, magnam ullam ipsa quam expedita,
-              aperiam cum illum, reprehenderit illo autem eum magni? Quae, nesciunt.
-            </p>
-          </div>
-
-          <div class="col-md-6">
-            <img src="assets/img/MobileAppDevelopmentno2.png" class="img-fluid" alt="">
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum aperiam harum quasi
-            iusto voluptatibus repellendus ipsum, ea doloribus quia maiores amet nobis quidem laborum id accusantium
-            dolore reiciendis. Culpa!</div>
-        </div>
-        <div class="row" id="nomargin" data-aos="fade-up">
-          <div class="col-md-6 order-1 order-md-2">
 
-            <img src="assets/img/Mobile_App_developement.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-6 order-1 order-md-2 mt-2">
-
-            <img src="assets/img/mobileAppdevelopment3.png" class="img-fluid mt-5" alt="">
-          </div>
-        </div>
 
       </div>
     </section><!-- End Features Section -->
@@ -292,7 +291,19 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About TriCloud Technologies</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+              darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+              <a href="https://www.facebook.com/TriCloudTechnologies" class="facebook"><i
+                  class="bx bxl-facebook"></i></a>
+              <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+              <a href="https://www.linkedin.com/company/tricloud-technologies/?viewAsMember=true" class="linkedin"><i
+                  class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -327,28 +338,13 @@
             </p>
 
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About TriCloud Technologies</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
-              darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links mt-3">
-              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-              <a href="https://www.facebook.com/TriCloudTechnologies" class="facebook"><i
-                  class="bx bxl-facebook"></i></a>
-              <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-              <a href="https://www.linkedin.com/company/tricloud-technologies/?viewAsMember=true" class="linkedin"><i
-                  class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Tri-cloud Technology</span></strong>. All Rights Reserved
+        &copy; Copyright <strong class="text-info"><span>Tri-cloud Technology</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
