@@ -2537,7 +2537,7 @@ section {
   padding: 15px 15px 15px 15px;
   background-color: #118d7f;
   transition: .2s ease-in-out 0s;
-  border-radius: 15%;
+  border-radius: 4%;
   border: none;
 }
 
