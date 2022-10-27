@@ -230,7 +230,7 @@ h6,
   color: #fff;
   border-radius: 20%;
   padding: 10px 15px 10px 15px;
-  margin-left: 40px;
+  align-content: center;
 }
 
 .navbar ul #prominent-color:hover{
@@ -520,8 +520,6 @@ h6,
   #hero::after {
     width: 180%;
     height: 95%;
-    border-radius: 0 0 50% 50%;
-    transform: translateX(-50%) rotate(0deg);
   }
 
   #hero::before {
@@ -553,8 +551,6 @@ h6,
     top: 0;
     width: 200%;
     height: 95%;
-    border-radius: 0 0 50% 50%;
-    transform: translateX(-50%) rotate(0deg);
   }
 
   #hero::before {
@@ -1425,7 +1421,7 @@ section {
   #prominent-color{
     padding: 0;
     width: max-content;
-    margin: 20px;
+    vertical-align: center;
   }
 
   #br-none{
