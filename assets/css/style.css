@@ -251,13 +251,20 @@ h6,
   .navbar ul {
     display: none;
   }
+
+  #hero p{
+    font-size: small;
+    width: 80%;
+  }
 }
 
 .navbar ul #prominent-color{
   background-color: #118d7f;
   color: #fff;
-  border-radius: 16%;
-  text-align: cente;
+  border-radius: 20%;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  margin-left: 40px;
 }
 
 .navbar ul #prominent-color:hover{
@@ -2447,7 +2454,7 @@ section {
 #contacting {
   color: #fff;
   font-weight: bold;
-  padding: 22px 20px 22px 20px;
+  padding: 15px 15px 15px 15px;
   background-color: #118d7f;
   transition: .2s ease-in-out 0s;
   border-radius: 15%;
