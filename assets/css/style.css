@@ -790,15 +790,15 @@ section {
 }
 
 .services .icon-box-pink .icon {
-  background: #fceef3;
+  background: #e6fdfc;
 }
 
 .services .icon-box-pink .icon i {
-  color: #ff689b;
+  color: #3fcdc7;
 }
 
 .services .icon-box-pink:hover {
-  border-color: #ff689b;
+  border-color: #3fcdc7;
 }
 
 .services .icon-box-cyan .icon {
@@ -818,23 +818,23 @@ section {
 }
 
 .services .icon-box-green .icon i {
-  color: #41cf2e;
+  color: #3fcdc7;
 }
 
 .services .icon-box-green:hover {
-  border-color: #41cf2e;
+  border-color: #3fcdc7;
 }
 
 .services .icon-box-blue .icon {
-  background: #e1eeff;
+  background: #eafde7;
 }
 
 .services .icon-box-blue .icon i {
-  color: #2282ff;
+  color: #3fcdc7;
 }
 
 .services .icon-box-blue:hover {
-  border-color: #2282ff;
+  border-color: #3fcdc7;
 }
 
 /*--------------------------------------------------------------
