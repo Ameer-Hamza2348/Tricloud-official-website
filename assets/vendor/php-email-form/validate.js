@@ -36,7 +36,7 @@ form.onsubmit = (e) => {
       //       alert(msg.id);
       // }
       Swal.fire(
-        'Good job!',
+        'Email Sent!',
         'Your request was completed!',
         'success'
       )
