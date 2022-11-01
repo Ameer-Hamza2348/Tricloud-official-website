@@ -228,7 +228,7 @@ h6,
 .navbar ul #prominent-color {
   background-color: #118d7f;
   color: #fff;
-  border-radius: 20%;
+  border-radius: 6%;
   padding: 10px 15px 10px 15px;
   align-content: center;
 }
@@ -316,11 +316,11 @@ h6,
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
+  top: 16px;
+  right: 94px;
   /* bottom: 15px; */
   left: 15px;
-  padding: 10px 0;
+  padding: 70px 0;
   background-color: rgba(0, 6, 6, 0.7);
   overflow-y: auto;
   transition: 0.3s;
@@ -329,7 +329,7 @@ h6,
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 15px;
   color: #fff;
 }
@@ -377,6 +377,11 @@ h6,
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
+}
+
+.navbar-mobile #prominent-color {
+  background-color: transparent !important;
+  padding: 0 0 0 0 !important;
 }
 
 /*--------------------------------------------------------------
@@ -716,6 +721,10 @@ section {
   padding-right: 10px;
   color: #6c757d;
   content: "/";
+}
+
+#background-d {
+  background-color: #000;
 }
 
 @media (max-width: 768px) {
@@ -1472,8 +1481,9 @@ section {
   background: linear-gradient(to top right, rgba(167, 165, 165, 0.678), rgba(231, 248, 255, 0.836));
   overflow: hidden;
   position: relative;
-  border-radius: 4%;
-  margin: 30px;
+  border-radius: 2%;
+  margin-bottom: 5%;
+  padding: 6%;
 }
 
 .portfolio .portfolio-item img {
