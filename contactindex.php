@@ -176,11 +176,13 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Menu</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="Home.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Home.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio.html">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contactindex.php">Contact Us</a></li>
             </ul>
           </div>
 
@@ -189,8 +191,12 @@
                 <h4>Our Services</h4>
               </u></a>
             <ul>
-              <li></i> Mobile App Development</li>
-              <li></i> Web Development</li>
+              <li><i class="bx bx-chevron-right"></i>Mobile App Development</li>
+              <li><i class="bx bx-chevron-right"></i>Web Development</li>
+              <li><i class="bx bx-chevron-right"></i>Custom Softwares</li>
+              <li><i class="bx bx-chevron-right"></i>Blockchain</li>
+              <li><i class="bx bx-chevron-right"></i>UX/UI Design</li>
+              <li><i class="bx bx-chevron-right"></i>POS systems</li>
             </ul>
           </div>
 
