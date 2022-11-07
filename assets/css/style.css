@@ -5,13 +5,13 @@
   overflow-x: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: transparent;
   width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background:black;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -19,7 +19,7 @@
   border-radius: 200vw;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: rgb(112, 110, 110);
   border-radius: 200vw;
 }
@@ -345,6 +345,7 @@ h6,
   overflow-y: auto;
   transition: 0.3s;
   font-weight: 900;
+  border-radius: 9px;
 }
 
 .navbar-mobile a,
@@ -1283,8 +1284,8 @@ section {
 
 .service-details .card-title {
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 20px;
+  /* text-align: center; */
+  /* margin-bottom: 20px; */
 }
 
 .service-details .card-title {
