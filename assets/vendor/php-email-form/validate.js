@@ -11,7 +11,7 @@ form.onsubmit = (e) => {
   Swal.fire({
     title: 'Sending Email',
     html: 'please wait...',
-    timer: 4000,
+    timer: 6000,
     timerProgressBar: false,
     didOpen: () => {
       Swal.showLoading()
