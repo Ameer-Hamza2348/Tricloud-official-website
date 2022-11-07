@@ -1287,8 +1287,8 @@ section {
   margin-bottom: 20px;
 }
 
-.service-details .card-title a {
-  color: #1e4356;
+.service-details .card-title {
+  color: rgb(44, 44, 44);
   transition: 0.3s;
 }
 
@@ -1305,7 +1305,7 @@ section {
 }
 
 .service-details .read-more a:hover {
-  color: #68A4C4;
+  color: #3fcdc7;
 }
 
 /* .service-details .card:hover img {
@@ -1313,11 +1313,11 @@ section {
 } */
 
 .service-details .card:hover .card-body {
-  border-color: #68A4C4;
+  border-color: #3fcdc7;
 }
 
-.service-details .card:hover .card-body .card-title a {
-  color: #68A4C4;
+.service-details .card:hover .card-body .card-title {
+  color: #3fcdc7;
 }
 
 #atplace {
@@ -2555,13 +2555,20 @@ section {
   display: none;
 }
 
+@font-face {
+  font-family: Circular;
+  src: url(CircularStd-Bold.ttf);
+}
+
 #text-change {
-  font-family: cursive;
+  font-family: "Circular";
+  letter-spacing: 4px;
+  word-spacing: 5px;
 }
 
 #capital-it {
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+  word-spacing: 7px;
 }
 
 #contacting {

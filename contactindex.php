@@ -178,7 +178,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Menu</h4>
             <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="Home.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="portfolio.html">Portfolio</a></li>
