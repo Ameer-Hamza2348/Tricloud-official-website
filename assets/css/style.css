@@ -781,7 +781,7 @@ section {
   overflow: hidden;
   margin: 0 0 40px 0;
   background: #fff;
-  box-shadow: 0 15px 36px 0 rgba(26, 31, 43, 0.14);
+  box-shadow: 3px 9px 20px 0px rgba(26, 31, 43, 0.4);
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #fff;
@@ -1243,6 +1243,9 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #28D3C0;
+  width: 20px;
+  border-radius: 35%;
+  transition: all ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -1275,7 +1278,7 @@ section {
 .service-details .card-body {
   z-index: 10;
   background: #fff;
-  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
   padding: 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-top: -47px;
@@ -1707,9 +1710,15 @@ section {
 .contact .info-box {
   color: #444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  border: 1px solid #fff;
+  box-shadow: 0px 11px 30px 2px rgba(83, 83, 83, 0.6);
   padding: 20px 0 30px 0;
   margin-bottom: 30px;
+}
+
+.contact .info-box:hover{
+  border: 1px solid #28D3C0;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact .info-box i {
@@ -1735,9 +1744,15 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  border: 1px solid #fff;
+  box-shadow: 10px 5px 23px rgba(83, 83, 83, 0.6);
   padding: 30px;
   margin-bottom: 30px;
+}
+
+.contact .php-email-form:hover{
+ border: 1px solid #28D3C0;
+ transition: all 0.3s ease-in-out;
 }
 
 .contact .php-email-form .error-message {
@@ -1789,9 +1804,9 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
-  background-color: #68A4C4;
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border: 1px solid #28D3C0;
 }
 
 .contact .php-email-form input {
@@ -1812,30 +1827,6 @@ section {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #118d7f;
-}
-
-.button-area span {
-  display: none;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------

@@ -84,7 +84,7 @@
 
             <div class="row">
               <div class="col-md-12">
-                <div class="info-box">
+                <div class="info-box rounded">
                   <i class="bx bx-map"></i>
                   <h3>Our Address</h3>
                   <p>Al-Qadir Heights <br>
@@ -93,7 +93,7 @@
                 </div>
               </div>
               <div class="col-md-7">
-                <div class="info-box">
+                <div class="info-box rounded">
                   <i class="bx bx-envelope"></i>
                   <h3>Email Us</h3>
                   <p>
@@ -102,7 +102,7 @@
                 </div>
               </div>
               <div class="col-md-5">
-                <div class="info-box">
+                <div class="info-box rounded">
                   <i class="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
                   <a href="#">+92 01234567890</a>
@@ -113,27 +113,27 @@
           </div>
           <!-- contact us form -->
           <div class="col-lg-6">
-            <form class="php-email-form" id="myForm" action="" method="post">
+            <form class="php-email-form rounded" id="myForm" action="" method="post">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control rounded" id="name" placeholder="Your Name" required>
                 </div>
 
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control rounded" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control rounded" name="subject" id="subject" placeholder="Subject" required>
               </div>
 
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                <textarea class="form-control rounded" name="message" rows="7" placeholder="Message" required></textarea>
               </div>
 
               <br>
               <div class="button-area">
-                <button class="w-100 mx-auto text-center" type="submit">Send Message</button>
+                <button class="w-100 mx-auto text-center rounded" type="submit">Send Message</button>
               </div>
               <div class="loading">Sending...</div>
               <!-- <div class="error-message">email not sent</div> -->
