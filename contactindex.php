@@ -73,7 +73,6 @@
 
       </div>
     </section><!-- End Contact Section -->
-
     <!-- ======= Contact Section ======= -->
     <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
       <div class="container">
@@ -146,6 +145,9 @@
     <?php include 'contact.php'; ?>
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
+      <div class="section-title">
+        <h2>Our Location</h2>
+      </div>
       <div class="container-fluid p-0">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.24716554332065!2d74.3266802732436!3d31.50249419028749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905dd97935bad%3A0x80d74bd09e7e224b!2sAl-Qadeer%20heights!5e0!3m2!1sen!2s!4v1663854002010!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
@@ -172,7 +174,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Menu</h4>
             <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="portfolio.html">Portfolio</a></li>
