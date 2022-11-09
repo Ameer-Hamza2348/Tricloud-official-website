@@ -24,6 +24,20 @@
   border-radius: 200vw;
 }
 
+#header, .section-title {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -418,7 +432,7 @@ h6,
   left: 50%;
   top: 0;
   width: 130%;
-  height: 95%;
+  height: 98%;
   background: linear-gradient(to right, rgba(0, 0, 6, 0.8), rgba(0, 0, 7, 0.8)), url("../img/christopher-gower-m_HRfLhgABo-unsplash.jpg") no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -1795,7 +1809,7 @@ section {
 
 .map iframe {
   width: 100%;
-  height: 415px;
+  height: 419px;
 }
 
 /*--------------------------------------------------------------
