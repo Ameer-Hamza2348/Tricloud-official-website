@@ -6,7 +6,7 @@ form.onsubmit = (e) => {
   e.preventDefault();
   let timerInterval
   Swal.fire({
-    title: 'Sending Email',
+    title: 'Sending Message',
     html: 'please wait...',
     timer: 6000,
     timerProgressBar: false,
@@ -29,7 +29,7 @@ form.onsubmit = (e) => {
   xhr.onload = () => {
     if (xhr.readyState == 4 && xhr.status == 200) {
       Swal.fire(
-        'Email Sent!',
+        'Message Sent!',
         'Your request was completed!',
         'success'
       )
