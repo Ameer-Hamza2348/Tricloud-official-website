@@ -12,10 +12,6 @@ form.onsubmit = (e) => {
     timerProgressBar: false,
     didOpen: () => {
       Swal.showLoading()
-      const b = Swal.getHtmlContainer().querySelector('.loading')
-      timerInterval = setInterval(() => {
-        b.textContent = Swal.getTimerLeft()
-      }, 100)
     },
     willClose: () => {
       clearInterval(timerInterval)
