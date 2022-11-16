@@ -142,7 +142,9 @@
       </div>
     </section>
     <!-- End Contact Section -->
+    <div style="display: none;">
     <?php include 'contact.php'; ?>
+    </div>
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
       <div class="section-title" data-aos="fade-in">
