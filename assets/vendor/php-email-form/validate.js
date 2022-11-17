@@ -28,7 +28,7 @@ form.onsubmit = (e) => {
       if (responseObject['status'] == 200) {
         Swal.fire(
           responseObject['message'],
-          'Your request has been completed!',
+          'We will get back to you as soon as possible!',
           'success'
         )
       } else if (responseObject['status'] == 300) {

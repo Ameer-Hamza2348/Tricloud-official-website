@@ -61,7 +61,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) 
 
     if ($response) {
       $responseObj->status = 200;
-      $responseObj->message = "Email has been sent!";
+      $responseObj->message = "Message Sent!";
       echo json_encode($responseObj);
     } else {
       $responseObj->status = 304;
