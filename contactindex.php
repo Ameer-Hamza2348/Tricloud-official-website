@@ -145,7 +145,7 @@
     </div>
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
-      <div class="section-title" data-aos="fade-in">
+      <div class="section-title mt-5 mb-3" data-aos="fade-in">
         <h2>Our Location</h2>
       </div>
       <div class="container-fluid p-0" data-aos="fade-down">
