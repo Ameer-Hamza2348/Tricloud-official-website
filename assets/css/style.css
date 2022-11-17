@@ -1740,6 +1740,11 @@ section {
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #28D3C0;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info-box:hover i{
+  border: 2px solid #28D3C0;
 }
 
 .contact .info-box h3 {
@@ -1757,27 +1762,32 @@ section {
 }
 
 .contact .php-email-form {
-  border: 1px solid #fff;
+  border: 1.5px solid #fff;
   box-shadow: 10px 5px 23px rgba(83, 83, 83, 0.6);
   padding: 30px;
   margin-bottom: 30px;
 }
 
+.contact .php-email-form:focus-within,
 .contact .php-email-form:hover {
-  border: 1px solid #28D3C0;
-  transition: all 0.3s ease-in-out;
+  border: 1.5px solid #00ffe1;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
 .contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .php-email-form textarea:focus{
   border: 1px solid #28D3C0;
+}
+
+.contact .php-email-form input:hover,
+.contact .php-email-form textarea:hover {
+  border: 1px solid #00ffe1;
 }
 
 .contact .php-email-form input {

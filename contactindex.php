@@ -25,8 +25,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- sweet alerts -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="sweetalert2.min.js"></script>
-  <link rel="stylesheet" href="/assets/vendor/sweet-alert/sweetalert2.min.js">
 
   <!-- AJAX link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -237,6 +235,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+  </script>
 </body>
 
 </html>

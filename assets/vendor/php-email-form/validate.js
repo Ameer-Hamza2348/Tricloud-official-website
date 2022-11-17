@@ -8,7 +8,7 @@ form.onsubmit = (e) => {
   Swal.fire({
     title: 'Sending Message',
     html: 'please wait...',
-    timer: 6000,
+    timer: 60000,
     timerProgressBar: false,
     didOpen: () => {
       Swal.showLoading()
@@ -19,22 +19,37 @@ form.onsubmit = (e) => {
   })
   let xhr = new XMLHttpRequest();
   xhr.onprogress = function () {
-    console.log(xhr.status);
+    console.log("STATUS of xhr: ", xhr.status);
   };
   xhr.open("POST", "contact.php", true);
   xhr.onload = () => {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      Swal.fire(
-        'Message Sent!',
-        'Your request was completed!',
-        'success'
-      )
-    } else {
-      Swal.fire(
-        'Error!',
-        'Check back later',
-        'error'
-      )
+      let responseObject = JSON.parse(xhr.response)
+      if (responseObject['status'] == 200) {
+        Swal.fire(
+          responseObject['message'],
+          'Your request has been completed!',
+          'success'
+        )
+      } else if (responseObject['status'] == 300) {
+        Swal.fire(
+          responseObject['message'],
+          'NOt enough parameters!',
+          'info'
+        )
+      } else if (responseObject['status'] == 304) {
+        Swal.fire(
+          responseObject['message'],
+          'Your request was unable to complete!',
+          'error'
+        )
+      } else {
+        Swal.fire(
+          responseObject['message'],
+          'Connection Error!',
+          'warning'
+        )
+      }
     }
   }
   let formData = new FormData(form);
