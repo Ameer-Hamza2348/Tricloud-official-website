@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="/assets/img/Tricloud-tech-favicon.png" rel="icon">
+  <link href="Tricloud-tech-favicon.png?v=2" rel="icon" type="image/png">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -141,7 +141,7 @@
     </section>
     <!-- End Contact Section -->
     <div style="display: none;">
-    <?php include 'contact.php'; ?>
+      <?php include 'contact.php'; ?>
     </div>
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
@@ -236,8 +236,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    if ( window.history.replaceState ) {
-        window.history.replaceState( null, null, window.location.href );
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
     }
   </script>
 </body>
