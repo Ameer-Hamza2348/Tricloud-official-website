@@ -113,7 +113,7 @@
             <form class="php-email-form rounded" id="myForm" action="" method="post">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control rounded" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control rounded" id="name" placeholder="Your Name" required oninvalid="this.setCustomValidity('Please enter your name');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Please enter your name">
                 </div>
 
                 <div class="col-md-6 form-group mt-3 mt-md-0">
@@ -121,11 +121,11 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control rounded" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control rounded" name="subject" id="subject" placeholder="Subject" required oninvalid="this.setCustomValidity('Subject is required');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Subject is required">
               </div>
 
               <div class="form-group mt-3">
-                <textarea class="form-control rounded" name="message" rows="7" placeholder="Message" required></textarea>
+                <textarea class="form-control rounded" name="message" rows="7" placeholder="Message" required oninvalid="this.setCustomValidity('Please enter your message');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Enter your message"></textarea>
               </div>
 
               <br>
@@ -148,8 +148,8 @@
       <div class="section-title mt-5 mb-3" data-aos="fade-in">
         <h2>Our Location</h2>
       </div>
-      <div class="container-fluid p-0" data-aos="fade-down">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.24716554332065!2d74.3266802732436!3d31.50249419028749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905dd97935bad%3A0x80d74bd09e7e224b!2sAl-Qadeer%20heights!5e0!3m2!1sen!2s!4v1663854002010!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div class="container-fluid p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.24716554332065!2d74.3266802732436!3d31.50249419028749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905dd97935bad%3A0x80d74bd09e7e224b!2sAl-Qadeer%20heights!5e0!3m2!1sen!2s!4v1663854002010!5m2!1sen!2s" frameborder="0" id="Our-Location" allowfullscreen=""></iframe>
       </div>
     </section><!-- End Map Section -->
 
