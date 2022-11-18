@@ -2598,3 +2598,11 @@ section {
 #main{
   margin-top: 80px;
 }
+
+.vertical-buttons {
+  flex-direction: column;
+}
+
+.top-margin {
+  margin-top: 1em;
+}
