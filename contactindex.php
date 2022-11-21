@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="Tricloud-tech-favicon.png?v=2" rel="icon" type="image/png">
+  <link href="/assets/img/Tricloud-tech-favicon.png?v=2" rel="icon" type="image/png">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <a href="index.html"><img src="assets/img/TriCloud  main logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="assets/img/Tricloud-main-logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -162,11 +162,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About TriCloud Technologies</h3>
+            <h3>About Tricloud Technologies</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
               darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links mt-3">
-              <a href="https://www.facebook.com/TriCloudTechnologies" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.facebook.com/TricloudTechnologies" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="https://www.linkedin.com/company/tricloud-technologies/?viewAsMember=true" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
